@@ -1,3 +1,4 @@
+# Not sure how to get the prompt to update without running `exec zsh`
 function git_prompt_info {
   local ref=$(=git symbolic-ref HEAD 2> /dev/null)
   local gitst="$(=git status 2> /dev/null)"
@@ -29,4 +30,4 @@ AT="%B@"
 MY_HOSTNAME="%{$fg_bold[green]%}%m"
 MY_CWD="%{$fg_no_bold[white]%}%1~%{$reset_color%}"
 
-PROMPT="${MY_USERNAME}${AT}${MY_HOSTNAME} ${MY_CWD}$(git_prompt_info) %# "
+PROMPT="${MY_USERNAME}${AT}${MY_HOSTNAME} ${MY_CWD} %# "
