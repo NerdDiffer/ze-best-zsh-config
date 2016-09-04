@@ -19,8 +19,14 @@ function git_prompt_info {
   fi
 
   if [[ -n $ref ]]; then
-    echo "%{$fg_bold[green]%}/${ref#refs/heads/}%{$reset_color%}$gitstatus"
+    local branch_name="%{$fg_bold[magenta]%}${ref#refs/heads/}%{$reset_color%}"
+    echo " [${branch_name}$gitstatus]"
   fi
 }
 
-PROMPT='%~%<< $(git_prompt_info)${PR_BOLD_WHITE}>%{${reset_color}%} '
+MY_USERNAME="%{$fg_bold[yellow]%}%n%{$reset_color%}"
+AT="%B@"
+MY_HOSTNAME="%{$fg_bold[green]%}%m"
+MY_CWD="%{$fg_no_bold[white]%}%1~%{$reset_color%}"
+
+PROMPT="${MY_USERNAME}${AT}${MY_HOSTNAME} ${MY_CWD}$(git_prompt_info) %# "
