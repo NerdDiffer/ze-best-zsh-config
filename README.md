@@ -1,8 +1,9 @@
-# Long ago, in a $HOME directory mounted several servers away . . .
+# zsh config
 
-On OSX it works best with the latest ZSH (4.3.X).  You can get it via the following instructions:
+Tweaking [ze-best-zsh-config](https://github.com/spicycode/ze-best-zsh-config).
 
-    # brew
-    brew update && brew install zsh
-    $EDITOR /etc/shells and add /usr/local/bin/zsh
-    chsh -s /usr/local/bin/zsh
+Source this repo's `zshrc` from your main `.zshrc` file:
+
+```sh
+source <path/to/this/repos/zshrc/file>
+```
