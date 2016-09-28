@@ -1,6 +1,7 @@
 PATH_TO_SETTINGS=$HOME/.zsh/settings
 
 source $PATH_TO_SETTINGS/exports.zsh
+source $PATH_TO_SETTINGS/env.zsh
 source $PATH_TO_SETTINGS/colors.zsh
 source $PATH_TO_SETTINGS/setopt.zsh
 source $PATH_TO_SETTINGS/prompt.zsh
