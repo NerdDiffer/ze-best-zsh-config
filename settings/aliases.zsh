@@ -1,5 +1,18 @@
 # Overwrite, mix & match your own aliases here...
 
+alias cd.eg='cd ~/git'
+alias cd.dg='cd ~/Dropbox/git'
+alias cd.js='cd ~/Documents/jobSearch'
+alias cd.re='cd ~/git/RE-com'
+alias cd.ap='cd ~/git/tuts-books/coursera/algorithms-princeton/notes'
+alias cd.hr='cd ~/git/HackReactor/'
+alias cd.t='cd ~/git/HackReactor/thesis'
+alias cd.bs='cd ~/git/misc/BeatSequencer'
+alias cd.tr='cd ~/git/misc/examples/TR808'
+alias cd.ts='cd ~/git/tone-studio'
+alias cd.tuts='cd ~/git/tuts-books'
+alias cd.ems='cd ~/git/evernote/evernote-markdown-sync'
+
 # git aliases
 alias gbr='git branch'
 alias gci='git commit'
@@ -13,6 +26,7 @@ alias ...='cd ../../'
 alias ....='cd ../../../'
 alias c='clear'
 alias diff='colordiff'
+alias ssh-re='source $HOME/git/dot-files/shells/ssh-re'
 
 # aliases provided with a fresh install of Manjaro
 alias l='ls -CF'
